@@ -1,0 +1,33 @@
+{
+  "name": "coffee-register-cache",
+  "version": "0.0.0",
+  "description": "cache the compiled required coffeescript modules to improve startup time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guillaume86/coffee-register-cache"
+  },
+  "keywords": [
+    "coffee",
+    "coffeescript",
+    "cache",
+    "register"
+  ],
+  "author": "Guillaume Lecomte <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guillaume86/coffee-register-cache/issues"
+  },
+  "homepage": "https://github.com/guillaume86/coffee-register-cache",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "fs-plus": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp-coffee": "^2.2.0",
+    "gulp": "^3.8.7"
+  }
+}
