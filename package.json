@@ -1,8 +1,12 @@
 {
-  "name": "coffee-register-cache",
-  "version": "0.0.0",
+  "name": "coffeescript-register-cache",
+  "version": "0.1.0",
   "description": "cache the compiled required coffeescript modules to improve startup time",
   "main": "index.js",
+  "engines": {
+    "node": "",
+    "yarn": "1.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,11 +27,12 @@
   },
   "homepage": "https://github.com/guillaume86/coffee-register-cache",
   "dependencies": {
-    "coffee-script": "^1.8.0",
-    "fs-plus": "^2.3.0"
+    "app-root-path": "^2.1.0",
+    "coffeescript": "adrian-gierakowski/coffeescript#333b78c3ab3f13480ca7041a55eb2e7a3d091c13",
+    "fs-plus": "^3.0.2"
   },
   "devDependencies": {
-    "gulp-coffee": "^2.2.0",
-    "gulp": "^3.8.7"
+    "gulp-coffee2": "^2.3.4",
+    "gulp": "^3.9.1"
   }
 }

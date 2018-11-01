@@ -27,5 +27,12 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# OSX
+.DS_Store
+
+# default cache path used for testing
+.coffee-cache
 # ===== End Node.gitignore =====
+
 

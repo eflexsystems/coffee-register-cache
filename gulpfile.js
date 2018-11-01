@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var coffee = require('gulp-coffee');
+var coffee = require('gulp-coffee2');
 
 gulp.task('build', function(){
   gulp.src('./src/index.coffee')
