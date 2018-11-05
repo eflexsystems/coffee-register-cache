@@ -4,8 +4,8 @@
   "description": "cache the compiled required coffeescript modules to improve startup time",
   "main": "index.js",
   "engines": {
-    "node": "",
-    "yarn": "1.5.1"
+    "node": ">=6",
+    "yarn": ">=1.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
