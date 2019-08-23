@@ -1,5 +1,5 @@
 {
-  "name": "coffeescript-register-cache",
+  "name": "eflexsystems-coffeescript-register-cache",
   "version": "0.1.0",
   "description": "cache the compiled required coffeescript modules to improve startup time",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/guillaume86/coffee-register-cache"
+    "url": "git://github.com/eflexsystems/coffee-register-cache"
   },
   "keywords": [
     "coffee",
@@ -23,12 +23,12 @@
   "author": "Guillaume Lecomte <=>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/guillaume86/coffee-register-cache/issues"
+    "url": "https://github.com/eflexsystems/coffee-register-cache/issues"
   },
-  "homepage": "https://github.com/guillaume86/coffee-register-cache",
+  "homepage": "https://github.com/eflexsystems/coffee-register-cache",
   "dependencies": {
     "app-root-path": "^2.1.0",
-    "coffeescript": "adrian-gierakowski/coffeescript#333b78c3ab3f13480ca7041a55eb2e7a3d091c13",
+    "coffeescript": "^2.4.1",
     "fs-plus": "^3.0.2"
   },
   "devDependencies": {
