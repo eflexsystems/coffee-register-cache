@@ -87,7 +87,7 @@ requireCoffeeScript = ( cacheDir ) ->
     if js?
 
       log "loaded from cache:", js
-      CoffeeScript._addSource filePath, coffee
+      CoffeeScript.registerCompiled filePath, coffee
 
     else
 
