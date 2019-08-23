@@ -1,5 +1,5 @@
 {
-  "name": "eflexsystems-coffeescript-register-cache",
+  "name": "eflex-coffeescript-register-cache",
   "version": "0.1.0",
   "description": "cache the compiled required coffeescript modules to improve startup time",
   "main": "index.js",
