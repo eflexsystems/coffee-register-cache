@@ -1,11 +1,11 @@
-crypto = require "crypto"
-path   = require "path"
+crypto          = require("crypto")
+path            = require("path")
+writeFileAtomic = require('write-file-atomic').sync
+CoffeeScript    = require("coffeescript")
+fs              = require("fs-plus")
 
-CoffeeScript = require "coffeescript"
-fs           = require "fs-plus"
 
-
-debug = Boolean Number process.env.COFFEE_REGISTER_CACHE_DUBEG
+debug = Boolean Number process.env.COFFEE_REGISTER_CACHE_DEBUG
 
 log = -> console.log.apply console, arguments if debug
 
@@ -63,7 +63,7 @@ compileCoffeeScriptAndCache = ( module, filePath, options, cachePath ) ->
   js = CoffeeScript._compileFile filePath, options
 
   # TODO log error
-  try fs.writeFileSync cachePath, js
+  try writeFileAtomicSync cachePath, js, chown: false
 
   js
 

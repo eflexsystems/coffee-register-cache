@@ -29,7 +29,8 @@
   "dependencies": {
     "app-root-path": "^3.0.0",
     "coffeescript": "^2.4.1",
-    "fs-plus": "^3.0.2"
+    "fs-plus": "^3.0.2",
+    "write-file-atomic": "3.0.1"
   },
   "devDependencies": {
     "gulp-coffee2": "^2.3.4",
