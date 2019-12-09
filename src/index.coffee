@@ -63,7 +63,7 @@ compileCoffeeScriptAndCache = ( module, filePath, options, cachePath ) ->
   js = CoffeeScript._compileFile filePath, options
 
   # TODO log error
-  try writeFileAtomicSync cachePath, js, chown: false
+  try writeFileAtomicSync cachePath, js, { chown: false, mode: false }
 
   js
 
