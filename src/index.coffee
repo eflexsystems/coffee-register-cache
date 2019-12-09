@@ -103,7 +103,7 @@ module.exports = ( cacheDir ) ->
     process.env.COFFEE_REGISTER_CACHE_CACHE_DIR ?
     "#{ require "app-root-path" }/.coffee-cache"
 
-  fs.ensureDirSync(cacheDir)
+  fs.makeTreeSync(cacheDir)
 
   requireCoffee = requireCoffeeScript cacheDir
 
