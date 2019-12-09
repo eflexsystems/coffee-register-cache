@@ -1,8 +1,8 @@
-crypto          = require("crypto")
-path            = require("path")
-writeFileAtomic = require('write-file-atomic').sync
-CoffeeScript    = require("coffeescript")
-fs              = require("fs-plus")
+crypto              = require("crypto")
+path                = require("path")
+writeFileAtomicSync = require('write-file-atomic').sync
+CoffeeScript        = require("coffeescript")
+fs                  = require("fs-plus")
 
 
 debug = Boolean Number process.env.COFFEE_REGISTER_CACHE_DEBUG
@@ -102,6 +102,8 @@ module.exports = ( cacheDir ) ->
   cacheDir ?=
     process.env.COFFEE_REGISTER_CACHE_CACHE_DIR ?
     "#{ require "app-root-path" }/.coffee-cache"
+
+  fs.ensureDirSync(cacheDir)
 
   requireCoffee = requireCoffeeScript cacheDir
 
