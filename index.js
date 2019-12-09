@@ -109,7 +109,7 @@
     if (cacheDir == null) {
       cacheDir = (ref = process.env.COFFEE_REGISTER_CACHE_CACHE_DIR) != null ? ref : `${require("app-root-path")}/.coffee-cache`;
     }
-    fs.ensureDirSync(cacheDir);
+    fs.makeTreeSync(cacheDir);
     requireCoffee = requireCoffeeScript(cacheDir);
     ref1 = CoffeeScript.FILE_EXTENSIONS;
     results = [];
